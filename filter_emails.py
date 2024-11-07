@@ -1,8 +1,8 @@
 import re
 
 def is_valid_email(email):
-    pattern = r'^[A-Za-z0-9_]+@[A-Za-z0-9_]+\.[A-Za-z]+$'
-    return bool(re.fullmatch(pattern, email))
+    PATTERN = r'^[A-Za-z0-9_]+@[A-Za-z0-9_]+(\.[A-Za-z]+)+$'
+    return bool(re.fullmatch(PATTERN, email))
 
 
 def main():
